@@ -1,0 +1,11 @@
+<ng-template *ngIf="loader; then loaderTemplate; else listContentTemplate"></ng-template>
+
+<ng-template #listContentTemplate>
+  <ng-container *ngIf="userList">
+    <app-reusable-list [list]="userList"></app-reusable-list>
+  </ng-container>
+</ng-template>
+
+<ng-template #loaderTemplate>
+  <h1>Loading...</h1>
+</ng-template>
