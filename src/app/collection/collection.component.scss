@@ -1,0 +1,28 @@
+.collection {
+  color: #3a4b62 !important;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fcbb6d;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 1200;
+}
+.collection-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.collection-list-item {
+  margin: 0 40px;
+  display: grid;
+  text-align: center;
+}
+.collection-list-item:hover {
+  font-weight: bold;
+}
+.products {
+  margin: 50px 100px;
+  position: relative;
+  top: 120px;
+}

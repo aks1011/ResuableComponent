@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ReusableListComponent implements OnInit {
 
-  @Input('list') userList: any;
-  
+  @Input('ItemList') ItemList: any;
+
   constructor() { }
 
   ngOnInit() {
