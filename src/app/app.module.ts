@@ -6,6 +6,7 @@ import { ReusableCardComponent } from './shared/reusable-card/reusable-card.comp
 import { ReusableListComponent } from './shared/reusable-list/reusable-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CollectionComponent } from './collection/collection.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { CollectionComponent } from './collection/collection.component';
     ReusableCardComponent,
     ReusableListComponent,
     HomepageComponent,
-    CollectionComponent
+    CollectionComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule

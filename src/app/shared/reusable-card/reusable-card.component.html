@@ -1,24 +1,21 @@
 <div class="row item-list">
   <div class="item col-4" id="item-{{i}}" *ngFor="let item of ItemList; let i =index;">
-    <img class="item-image container" src="{{item.image}}">
-    <div class="row item-details">
-      <div class="col-6">
-        <p class="item-name">{{item.name}}</p>
-      </div>
-      <div class="col-3">
-        <p class="item-price">
-          <i class="fa fa-inr" aria-hidden="true"></i>
-          <span [ngClass]="{'has-discount': item.hasDiscount}">{{item.price}}</span>
-        </p>
-      </div>
-      <div class="col-3">
+    <img class="item-image" src="{{item.image}}">
+    <div class="item-details">
+      <div class="item-name">{{item.name}}</div>
+      <div class="item-pricing">
         <p class="item-discount-price" *ngIf=item.hasDiscount>
-          <i class="fa fa-inr" aria-hidden="true"></i>
-          <span>{{item.discountedPrice}}</span>
+          <span>Rs.{{item.discountedPrice}}</span>
+        </p>
+        <p [ngClass]="item.hasDiscount ? 'item-price' : 'item-discount-price'">
+          <span [ngClass]="{'has-discount': item.hasDiscount}">Rs.{{item.price}}</span>
+        </p>
+        <p class="item-discount" *ngIf=item.hasDiscount>
+          <span>({{item.discount}}% off)</span>
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row item-buttons">
       <div class="col-6"><button type="button" class="btn btn-outline-addtocart btn-block">Add to cart</button>
       </div>
       <div class="col-6"><button type="button" class="btn btn-outline-buynow btn-block">Buy now</button>
