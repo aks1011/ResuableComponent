@@ -39,7 +39,7 @@ export class CollectionComponent implements OnInit {
         if (params) {
           this.itemlist = this.dataList.filter(
             item => item.category === params.category);
-        } 
+        }
       });
   }
 
