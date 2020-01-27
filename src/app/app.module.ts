@@ -7,6 +7,8 @@ import { ReusableListComponent } from './shared/reusable-list/reusable-list.comp
 import { HomepageComponent } from './homepage/homepage.component';
 import { CollectionComponent } from './collection/collection.component';
 import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,11 @@ import { AboutComponent } from './about/about.component';
     ReusableListComponent,
     HomepageComponent,
     CollectionComponent,
-    AboutComponent
+    AboutComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

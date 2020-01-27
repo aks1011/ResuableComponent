@@ -1,14 +1,21 @@
+a{
+  color: #3A4B62 !important;
+  text-decoration: none;
+}
+.active{
+  font-weight: bolder;
+}
 .collection {
-  color: #3a4b62 !important;
+  color: #3A4B62 !important;
   height: 40px;
   line-height: 40px;
   background-color: #fcbb6d;
   position: fixed;
-  top: 80px;
   width: 100%;
   z-index: 1200;
 }
 .collection-list {
+  font-size: 12px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -22,7 +29,6 @@
   font-weight: bold;
 }
 .products {
-  margin: 50px 100px;
+  margin: 100px 100px;
   position: relative;
-  top: 120px;
 }
